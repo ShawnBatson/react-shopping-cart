@@ -16,22 +16,22 @@ In this project you'll take take an almost completed e-commerce store and refact
 
 ## Project Set Up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal.
-- [ ] CD into the project base directory `cd react-shopping-cart`.
-- [ ] Download project dependencies by running `npm install`.
-- [ ] Start up the app using `npm start`.
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [ x] Create a forked copy of this project.
+- [ x] Add your team lead as collaborator on Github.
+- [ x] Clone your OWN version of the repository in your terminal.
+- [ x] CD into the project base directory `cd react-shopping-cart`.
+- [ x] Download project dependencies by running `npm install`.
+- [ x] Start up the app using `npm start`.
+- [ x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [ x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [ x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into master (student's repository). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
+- [ x] Submit a Pull-Request to merge `<firstName-lastName>` Branch into master (student's repository). **Please don't merge your own pull request**
+- [ x] Add your team lead as a reviewer on the pull-request
+- [ x] Your team lead will count the project as complete by merging the branch back into master.
+- [ x] Do your magic!
 
 # Project - Shopping Cart
 
@@ -39,33 +39,33 @@ Follow these steps for completing your project.
 
 Before you get started, please take a few minutes and get acquainted with this application. Understand what's going on and how it's working.
 
-- If you look in the `App.js` you'll notice there are currently two state properties - `products` to keep track of all available products, and `cart` that will keep track of all the items in our `cart`.
+- [ x]If you look in the `App.js` you'll notice there are currently two state properties - `products` to keep track of all available products, and `cart` that will keep track of all the items in our `cart`.
 
-- You'll also notice inside of our `App.js` we have 3 components. A navigation component and two route based components. Each of those components are all being passed either our `cart` state or `product` state as props, when we start to scale our application and add more props our codebase is going to start to become very cumbersome and will make our application hard to work with.
+- [ x] You'll also notice inside of our `App.js` we have 3 components. A navigation component and two route based components. Each of those components are all being passed either our `cart` state or `product` state as props, when we start to scale our application and add more props our codebase is going to start to become very cumbersome and will make our application hard to work with.
 
-- To combat this from happening we're going to refactor our application to use `Context API`, making it easier and more effiecent to access data across our application.
+- [ x] To combat this from happening we're going to refactor our application to use `Context API`, making it easier and more effiecent to access data across our application.
 
 **Step 1 - Add item functionality**
 
-- In `App.js` there is a function called `addItem`. Finish writing the logic in this function to be able to add the given item to the shopping cart
+- [ x] In `App.js` there is a function called `addItem`. Finish writing the logic in this function to be able to add the given item to the shopping cart
 
 **STEP 2 - Creating ProductContext**
 
-- In `src`, create a new folder named `contexts`, this folder is going to be used to hold all of `context objects` we create.
+- [ x] In `src`, create a new folder named `contexts`, this folder is going to be used to hold all of `context objects` we create.
 
-- Inside that folder create a new file named `ProductContext.js`
+- [ x] Inside that folder create a new file named `ProductContext.js`
 
-- In this file, import the `createContext` function from the react library and create our `ProductContext`.
+- [ x] In this file, import the `createContext` function from the react library and create our `ProductContext`.
 
 **STEP 3 - Providing data with ProductContext**
 
-- Now that we've created our `ProductContext` we can import into our `App.js`. Now we can start providing data across our application!
+- [ x]Now that we've created our `ProductContext` we can import into our `App.js`. Now we can start providing data across our application!
 
-- Wrap all of your components/routes in `App.js` inside of `ProductContext.Provider` component.
+- [ x]Wrap all of your components/routes in `App.js` inside of `ProductContext.Provider` component.
 
-- Next pass a value prop to your `Provider`.
+- [ x] Next pass a value prop to your `Provider`.
 
-- In the value prop we'll pass in the products state, and an addItem function that will allow us to add books to the cart.
+- [ x] In the value prop we'll pass in the products state, and an addItem function that will allow us to add books to the cart.
 
 ```js
 <ProductContext.Provider value={{ products, addItem }}>
